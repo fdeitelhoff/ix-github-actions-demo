@@ -3,7 +3,7 @@ import test from 'node:test';
 import { releaseLabel } from '../src/release-label.mjs';
 
 test('Projekt und Version ergeben einen lesbaren Releasenamen', () => {
-  assert.equal(releaseLabel('actions-demo', '1.2.3'), 'actions-demo v1.2.3');
+  assert.equal(releaseLabel('actions-demo', '1.2.3'), 'Absichtlich falsch');
 });
 
 test('Leerzeichen um den Projektnamen beeinflussen das Ergebnis nicht', () => {
