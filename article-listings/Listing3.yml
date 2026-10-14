@@ -1,0 +1,8 @@
+name: Shared CI
+on: [push, pull_request]
+permissions: {}
+jobs:
+  test:
+    permissions:
+      contents: read
+    uses: ./.github/workflows/reusable-ci.yml

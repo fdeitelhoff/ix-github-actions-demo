@@ -1,0 +1,13 @@
+{
+  "name": "github-actions-lieferketten-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Begleitprojekt zum Fachartikel über GitHub Actions als Lieferkettenrisiko",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/demo.mjs",
+    "test": "node --test",
+    "demo:tags": "node scripts/tag-lab.mjs"
+  }
+}

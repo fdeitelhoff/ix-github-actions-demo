@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Demo: npm ci",
+      "type": "shell",
+      "command": "npm",
+      "args": ["ci"],
+      "windows": { "command": "npm.cmd" },
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Demo: Tests",
+      "type": "shell",
+      "command": "npm",
+      "args": ["test"],
+      "windows": { "command": "npm.cmd" },
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Demo: Tag gegen SHA",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "demo:tags"],
+      "windows": { "command": "npm.cmd" },
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Demo: Beispielprogramm",
+      "type": "shell",
+      "command": "npm",
+      "args": ["start"],
+      "windows": { "command": "npm.cmd" },
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

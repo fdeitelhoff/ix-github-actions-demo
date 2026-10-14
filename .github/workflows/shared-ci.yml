@@ -1,0 +1,9 @@
+name: Shared CI (manuell)
+on:
+  workflow_dispatch:
+permissions: {}
+jobs:
+  test:
+    permissions:
+      contents: read
+    uses: ./.github/workflows/reusable-ci.yml

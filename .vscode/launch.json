@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Beispielprogramm debuggen",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/demo.mjs",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
